@@ -44,7 +44,7 @@ class Simulator:
         for i in range(self.num_games):
             self.mdp.reset()
             self.play_game()
-            if i % 1000 == 0:
+            if(i% 1000 == 0):
                 print("Game ", i, " average ", int(self.hits/1000), " hits")
                 self.hits = 0
     
